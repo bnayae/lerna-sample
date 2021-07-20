@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev": "lerna run dev",
+    "dev:basic": "lerna run dev --scope=@apps/basic-app",
+    "dev:blog": "lerna run dev --scope=@apps/blog-app",
+    "dev:apps": "lerna run dev --scope=@apps/*",
+    "build": "lerna run build",
+    "build:basic": "lerna run build --scope=@apps/basic-app",
+    "build:blog": "lerna run build --scope=@apps/blog-app",
+    "build:apps": "lerna run build --scope=@apps/*",
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "diff": "lerna diff",
+    "new-version": "lerna version --conventional-commit --yes",
+    "lerna:update": "lernaupdate",
+    "deploy:production": "now && now alias"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "lerna-update-wizard": "^0.17.8"
+  }
+}
